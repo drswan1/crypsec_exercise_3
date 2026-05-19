@@ -103,7 +103,7 @@
 % DO NOT MODIFY ANYTHING BEFORE THIS LINE IN THIS FILE %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%% USE GROUP NAME FROM BLACKBOARD BELOW AND NO PERSONAL IDENTIFIABLE INFORMATION %%%%%%%%%%%%%%%%%%
-\newcommand{\groupname}{YOUR-GROUP-NAME-FROM-BLACKBOARD-ONLY-HERE-NO-NAMES}
+\newcommand{\groupname}{Malware Hunters}
 \author{\groupname}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -149,7 +149,7 @@ Use CTO to (\url{https://legacy.cryptool.org/en/cto/hill}) to encrypt the follow
     THISTEXTSHOULDREMAINSECRET
 \end{quote}
 using the key
-\begin{equation}
+\begin{equation} 
     \begin{pmatrix}
     23 & 10 \\
      0 &  9
@@ -235,7 +235,7 @@ print("Ciphertext:", ciphertext)
 # Decrypt using K^{-1} mod 26
 K_inv = K^(-1)
 print("K inverse:", K_inv)
-# det(K) = 23*9 - 10*0 = 207 ≡ 25 (mod 26), inverse of 25 is 25
+# det(K) = 23*9 - 10*0 = 207 = 25 (mod 26), inverse of 25 is 25
 # K^{-1} = 25 * [[9,-10],[0,23]] mod 26 = [[17,10],[0,3]]
 
 dec_nums = []
@@ -564,10 +564,14 @@ and the key are both all ones?
 
 \end{exercisebox}
 
-\paragraph{Answer:} \yoursolutionhere{}
+\paragraph{Answer:} In the both scenarios, both the intial and modified message are the same. No bits were flipped.
 
-
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.1]{image copy.png}
+    \caption{DES Avalanche Effect Results}
+    \label{fig:des-avalanche}
+\end{figure}
 \stepcounter{qid}
 \renewcommand{\exerciseprefix}{PS-\blockid{}-E\theexercise: \exname-Q\theqid}
 \renewcommand{\questiontitle}{\exerciseprefix{}: Avalanche effect in DES}
@@ -586,7 +590,14 @@ round. Hence the term avalanche effect.)
 \end{enumerate}
 \end{exercisebox}
 
-\paragraph{Answer:} \yoursolutionhere{}
+\paragraph{Answer:} As seen on the photo, the total number of output bits changed is 6. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.1]{image.png}
+    \caption{DES Avalanche Effect Results}
+    \label{fig:des-avalanche}
+\end{figure}
 
 
 \newpage
